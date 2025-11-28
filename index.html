@@ -16,10 +16,13 @@
             <!-- <a-entity geometry="primitive:sphere; radius:1" material="shader:flat; color:red" position="0 0 -10"></a-entity> -->
             
             <a-entity camera look-controls>
+                
+                <a-entity light="color: #FFF; intensity: 0.5" position="-1 1 0"></a-entity>
 
                 <!--ELEMENTO PARA EL TEXTO-->
                 <a-text value="Puntos: 0" color="black" position="0 -0.1 -1" width="1" align="center"></a-text>
-
+                <a-text value="Tiempo: 0" color="black" position="0 -0.15 -1" width="1" align="center"></a-text>
+               
                 <!-- ELEMENTO CURSOR PARA CREAR INTERACCIÓN CON METEORITOS (FUSE = CUANDO ESTÉ EN UN ELEMENTO)-->
                 <a-entity cursor="fuse: true; fuseTimeout: 100" position="0 0 -1" raycaster="objects: .meteor"
                     geometry="primitive: ring; radiusInner: 0.015; radiusOuter: 0.025" material="shader: flat"></a-entity>
